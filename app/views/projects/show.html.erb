@@ -1,10 +1,46 @@
+<style>
+/* Main heading */
+h1 {
+  color:Glaucous;
+  text-align: center;
+  font-family:verdana;
+}
+ 
+/* div1 */
+.div1 {
+  border: 2px outset lightblue;
+  background-color: gray;
+  font-family:verdana;
+}
+/* div3 */
+.div2 {
+  border: 2px outset gray;
+  background-color: lightgray;
+  text-align: center;
+  font-family:verdana;
+}
+/* paragraph styling */
+p {
+  color: white;
+  text-align: center;
+}
+ 
+</style>
+ 
+<h1>View Project</h1>
+ 
 <p style="color: green"><%= notice %></p>
-
+ 
+<div class="div1">
 <%= render @project %>
-
-<div>
-  <%= link_to "Edit this project", edit_project_path(@project) %> |
-  <%= link_to "Back to projects", projects_path %>
-
-  <%= button_to "Destroy this project", @project, method: :delete %>
+</div>
+ 
+<div class="div2">
+  <br><br>
+  <%= link_to "Edit This Project", edit_project_path(@project) %>
+  <br><br>
+  <%= link_to "Return To Projects Display", projects_path %>
+  <br><br><br>
+ 
+  <%= button_to "Destroy This Project", @project, method: :delete %>
 </div>

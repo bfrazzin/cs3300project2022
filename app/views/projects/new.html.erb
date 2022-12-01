@@ -1,9 +1,43 @@
-<h1>New project</h1>
-
-<%= render "form", project: @project %>
-
+<style>
+/* Main heading */
+h1 {
+  color:Glaucous;
+  text-align: center;
+  font-family:verdana;
+}
+ 
+/* div1 */
+.div1 {
+  border: 2px outset lightblue;
+  background-color: gray;
+  font-family:verdana;
+}
+/* div3 */
+.div2 {
+  border: 2px outset gray;
+  background-color: lightgray;
+  text-align: center;
+  font-family:verdana;
+}
+/* paragraph styling */
+p {
+  color: white;
+  text-align: center;
+}
+ 
+</style>
+ 
+<h1>New Project Creation</h1>
+ 
+ 
+<div class="div2">
 <br>
-
-<div>
-  <%= link_to "Back to projects", projects_path %>
-</div>
+<%= render "form", project: @project %>
+ 
+<br>
+ 
+ 
+<%= link_to "Return to Projects Display", projects_path %>
+<br>
+<br>
+</div2>
