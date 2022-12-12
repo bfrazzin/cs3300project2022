@@ -1,26 +1,69 @@
-<h2>Log in</h2>
+:<!DOCTYPE html>
+<html>
+<body>
+<!-- Style -->
+<style>
+/* Main heading */
+h1 {
+  color:Glaucous;
+  text-align: center;
+  font-family:verdana;
+}
+ 
+/* div1 */
+.div1 {
+  border: 2px outset lightblue;
+  background-color: gray;
+  font-family:verdana;
+}
+/* div3 */
+.div2 {
+  
+  background-color: lightgray;
+  text-align: center;
+  font-family:verdana;
+}
+/* paragraph styling */
+p {
+  color: white;
+  text-align: center;
+}
+ 
+</style>
+
+
+
+<h1>Enter your Login Details</h1>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <div class="div2">
+    <br>
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
   </div>
 
-  <div class="field">
+  <div class="div2">
+    <br>
     <%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "current-password" %>
   </div>
 
   <% if devise_mapping.rememberable? %>
-    <div class="field">
+    <div class="div2">
+      <br>
       <%= f.check_box :remember_me %>
       <%= f.label :remember_me %>
     </div>
   <% end %>
 
-  <div class="actions">
+  <div class="div2">
+  <br>
     <%= f.submit "Log in" %>
-  </div>
+  
 <% end %>
-
+<br><br>
 <%= render "users/shared/links" %>
+<br>
+</div>
+</body>
+</html>
