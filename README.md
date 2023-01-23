@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a semester project portfolio web application. 
 
-Things you may want to cover:
+Technologies used:
 
-* Ruby version
+* Ruby
 
-* System dependencies
+* JavaScript
 
-* Configuration
+* Rails
 
-* Database creation
+* RSpec
 
-* Database initialization
+* SimpleCov
 
-* How to run the test suite
+* BootStrap
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
